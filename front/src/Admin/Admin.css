@@ -1,0 +1,175 @@
+.users-container {
+  padding: 20px;
+  background-color: #212529;
+  color: #f8f9fa;
+  border-radius: 8px;
+}
+
+h2.text-center {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #17a2b8;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-container label {
+  font-size: 1rem;
+  color: #f8f9fa;
+}
+
+.filter-container .form-select {
+  width: 200px;
+  background-color: #495057;
+  border: 1px solid #17a2b8;
+  color: #f8f9fa;
+  font-size: 1rem;
+  padding: 8px;
+}
+
+.filter-container .form-select:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #343a40;
+  border-radius: 8px;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.table th {
+  background-color: #17a2b8;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.table td {
+  color: #f8f9fa;
+  font-size: 1rem;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #495057;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #343a40;
+}
+
+.table td input,
+.table td select {
+  background-color: #495057;
+  color: #f8f9fa;
+  border: 1px solid #495057;
+  padding: 5px;
+  font-size: 0.9rem;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.table td input:focus,
+.table td select:focus {
+  border-color: #17a2b8;
+  box-shadow: 0 0 5px rgba(23, 162, 184, 0.5);
+}
+
+.btn {
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: white;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  transform: scale(1.05);
+}
+
+.me-2 {
+  margin-right: 10px;
+}
+
+.fa-edit,
+.fa-trash {
+  margin-right: 5px;
+}
+
+.table tbody tr:hover {
+  background-color: #495057;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .users-container {
+    padding: 10px;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.9rem;
+  }
+
+  .filter-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-container label {
+    margin-bottom: 10px;
+  }
+
+  .filter-container .form-select {
+    width: 100%;
+  }
+}
